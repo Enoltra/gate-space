@@ -14,8 +14,8 @@ const Contact = () => {
               <h3 className="text-2xl font-bold">Kontakt & Information</h3>
               <p className="text-muted-foreground mb-6">Weichmann Video Productions</p>
               <div className="space-y-4">
-                <div className="flex items-center space-x-3"><Mail className="h-5 w-5 text-gate-green" /><span>patrick@weichmann.at</span></div>
-                <div className="flex items-center space-x-3"><Phone className="h-5 w-5 text-gate-green" /><span>+43 676 931 5322</span></div>
+                <div className="flex items-center space-x-3"><Mail className="h-5 w-5 text-gate-green" /><span>info@weichmann.at</span></div>
+                <div className="flex items-center space-x-3"><Phone className="h-5 w-5 text-gate-green" /><span>+43 1 234 5678</span></div>
                 <div className="flex items-center space-x-3"><Calendar className="h-5 w-5 text-gate-green" /><span>Drehtermine: 15. & 16. Juli 2025</span></div>
               </div>
               <hr className="my-6 border-border" />
@@ -59,10 +59,11 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+// REPLACE IT WITH THIS CODE
 
 <div className="mt-8 text-center">
   <a
-    href="mailto:patrick@weichmann.at?subject=Anfrage%20für%20Briefing-Meeting%3A%20GATE%20Space%20Video&body=Hallo%20Weichmann%20Team%2C%0A%0Aich%20möchte%20gerne%20ein%20Briefing-Meeting%20für%20das%20GATE%20Space%20Videoprojekt%20vereinbaren.%0A%0AVielen%20Dank%20und%20freundliche%20Grüße%2C%0A"
+    href="mailto:info@weichmann.at?subject=Anfrage%20für%20Briefing-Meeting%3A%20GATE%20Space%20Video&body=Hallo%20Weichmann%20Team%2C%0A%0Aich%20möchte%20gerne%20ein%20Briefing-Meeting%20für%20das%20GATE%20Space%20Videoprojekt%20vereinbaren.%0A%0AVielen%20Dank%20und%20freundliche%20Grüße%2C%0A"
     className="px-8 py-4 gate-green-bg hover:bg-primary/90 text-black font-semibold rounded-lg pulse-green flex items-center justify-center mx-auto"
   >
     <Mail className="mr-2 h-5 w-5" />
@@ -76,4 +77,4 @@ const Contact = () => {
   );
 };
 
-export default Contacti;
+export default Contact;
