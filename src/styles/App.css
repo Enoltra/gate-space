@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    body {
+        @apply bg-background text-foreground;
+    }
+    * {
+        @apply border-border;
+    }
+}
+
+@layer components {
+    /* Custom GATE Space styles */
+    .hero-gradient {
+        background: linear-gradient(135deg, #000000 0%, #2C2C2C 50%, #000000 100%);
+    }
+    .section-gradient {
+        background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+    }
+    .gate-green-bg {
+        @apply bg-gate-green;
+    }
+    .glass-effect {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 166, 80, 0.2);
+    }
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    .tech-border {
+        border: 2px solid transparent;
+        background: linear-gradient(#1a1a1a, #1a1a1a) padding-box, linear-gradient(45deg, theme('colors.gate-green'), theme('colors.electric-blue')) border-box;
+    }
+}
+
+@layer utilities {
+    .animate-fade-in {
+        animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-slide-in-left {
+        animation: slideInLeft 0.8s ease-out;
+    }
+    @keyframes slideInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .animate-slide-in-right {
+        animation: slideInRight 0.8s ease-out;
+    }
+    @keyframes slideInRight {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .pulse-green {
+        animation: pulseGreen 2s infinite;
+    }
+    @keyframes pulseGreen {
+        0%,
+        100% {
+            box-shadow: 0 0 0 0 rgba(0, 166, 80, 0.7);
+        }
+        50% {
+            box-shadow: 0 0 0 10px rgba(0, 166, 80, 0);
+        }
+    }
+}
